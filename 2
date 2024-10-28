@@ -16,6 +16,8 @@ G2L["11"] = Instance.new("TextLabel")
 G2L["12"] = Instance.new("UITextSizeConstraint")
 G2L["15"] = Instance.new("UIAspectRatioConstraint")
 
+
+
 --Propeties:
 G2L["0"].Name = [[InventoryViewerUI]]
 G2L["0"].Enabled = true
@@ -45,7 +47,7 @@ G2L["2"].FontFace = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.Fon
 G2L["2"].Text = [[ThisGuys51255555'555555555555 Inventory]]
 G2L["2"].TextColor3 = Color3.fromRGB(255, 255, 255)
 G2L["2"].TextScaled = true
-G2L["2"].TextSize = 19
+G2L["2"].TextSize = 20
 G2L["2"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
 G2L["2"].TextStrokeTransparency = 0.5
 G2L["2"].TextWrapped = true
@@ -119,7 +121,7 @@ G2L["5"].ZIndex = 1
 G2L["5"].Parent = G2L["3"]
 
 G2L["6"].Name = [[UITextSizeConstraint]]
-G2L["6"].MaxTextSize = 10 -- Mudança feita aqui para o Slot1
+G2L["6"].MaxTextSize = 8
 G2L["6"].Parent = G2L["5"]
 
 G2L["7"].Name = [[Slot2]]
@@ -152,7 +154,7 @@ G2L["7"].ZIndex = 1
 G2L["7"].Parent = G2L["3"]
 
 G2L["8"].Name = [[UITextSizeConstraint]]
-G2L["8"].MaxTextSize = 10 -- Mudança feita aqui para o Slot2
+G2L["8"].MaxTextSize = 8
 G2L["8"].Parent = G2L["7"]
 
 G2L["9"].Name = [[Slot3]]
@@ -172,7 +174,7 @@ G2L["9"].AnchorPoint = Vector2.new(0, 0)
 G2L["9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 G2L["9"].BackgroundTransparency = 1
 G2L["9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-G2L["9"].BorderSizePixel = 0
+G2L["9"].BorderSizePixel = 0.5
 G2L["9"].ClipsDescendants = false
 G2L["9"].Draggable = false
 G2L["9"].Position = UDim2.new(0, 0, 0, 0)
@@ -185,7 +187,7 @@ G2L["9"].ZIndex = 1
 G2L["9"].Parent = G2L["3"]
 
 G2L["10"].Name = [[UITextSizeConstraint]]
-G2L["10"].MaxTextSize = 10 -- Mudança feita aqui para o Slot3
+G2L["10"].MaxTextSize = 8
 G2L["10"].Parent = G2L["9"]
 
 G2L["11"].Name = [[Slot4]]
@@ -218,11 +220,12 @@ G2L["11"].ZIndex = 1
 G2L["11"].Parent = G2L["3"]
 
 G2L["12"].Name = [[UITextSizeConstraint]]
-G2L["12"].MaxTextSize = 10 -- Mudança feita aqui para o Slot4
+G2L["12"].MaxTextSize = 8
 G2L["12"].Parent = G2L["11"]
 
-G2L["15"].Name = [[AspectRatioConstraint]]
-G2L["15"].AspectRatio = 1.6
-G2L["15"].Parent = G2L["1"]
+G2L["15"].Name = [[UIAspectRatioConstraint]]
+G2L["15"].AspectRatio = 1.777344
+G2L["15"].Parent = G2L["0"]
 
-return G2L
+--Scripte
+ return G2L["0"]
