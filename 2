@@ -1,4 +1,4 @@
---Instances:
+-- Instances:
 local G2L = {}
 
 G2L["0"] = Instance.new("ScreenGui")
@@ -16,9 +16,7 @@ G2L["11"] = Instance.new("TextLabel")
 G2L["12"] = Instance.new("UITextSizeConstraint")
 G2L["15"] = Instance.new("UIAspectRatioConstraint")
 
-
-
---Propeties:
+-- Properties:
 G2L["0"].Name = [[InventoryViewerUI]]
 G2L["0"].Enabled = true
 G2L["0"].ResetOnSpawn = false
@@ -43,7 +41,7 @@ G2L["1"].ZIndex = 1
 G2L["1"].Parent = G2L["0"]
 
 G2L["2"].Name = [[PlayerName]]
-G2L["2"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["2"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 G2L["2"].Text = [[ThisGuys51255555'555555555555 Inventory]]
 G2L["2"].TextColor3 = Color3.fromRGB(255, 255, 255)
 G2L["2"].TextScaled = true
@@ -91,11 +89,12 @@ G2L["3"].Parent = G2L["1"]
 G2L["4"].Name = [[UIListLayout]]
 G2L["4"].Parent = G2L["3"]
 
+-- Slots with updated text colors
 G2L["5"].Name = [[Slot1]]
-G2L["5"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["5"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 G2L["5"].Text = [[1 ->]]
 G2L["5"].RichText = true
-G2L["5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["5"].TextColor3 = Color3.fromRGB(62, 63, 66) -- Cor do nome da arma
 G2L["5"].TextScaled = true
 G2L["5"].TextSize = 14
 G2L["5"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
@@ -125,10 +124,10 @@ G2L["6"].MaxTextSize = 28
 G2L["6"].Parent = G2L["5"]
 
 G2L["7"].Name = [[Slot2]]
-G2L["7"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["7"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 G2L["7"].Text = [[1 ->]]
 G2L["7"].RichText = true
-G2L["7"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["7"].TextColor3 = Color3.fromRGB(62, 63, 66) -- Cor do nome da arma
 G2L["7"].TextScaled = true
 G2L["7"].TextSize = 14
 G2L["7"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
@@ -144,7 +143,7 @@ G2L["7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 G2L["7"].BorderSizePixel = 0
 G2L["7"].ClipsDescendants = false
 G2L["7"].Draggable = false
-G2L["7"].Position = UDim2.new(0, 0, 0, 0)
+G2L["7"].Position = UDim2.new(0, 0, 0.25, 0)
 G2L["7"].Rotation = 0
 G2L["7"].Selectable = false
 G2L["7"].SelectionOrder = 0
@@ -158,10 +157,10 @@ G2L["8"].MaxTextSize = 28
 G2L["8"].Parent = G2L["7"]
 
 G2L["9"].Name = [[Slot3]]
-G2L["9"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["9"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 G2L["9"].Text = [[1 ->]]
 G2L["9"].RichText = true
-G2L["9"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["9"].TextColor3 = Color3.fromRGB(62, 63, 66) -- Cor do nome da arma
 G2L["9"].TextScaled = true
 G2L["9"].TextSize = 14
 G2L["9"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
@@ -174,10 +173,10 @@ G2L["9"].AnchorPoint = Vector2.new(0, 0)
 G2L["9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 G2L["9"].BackgroundTransparency = 1
 G2L["9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-G2L["9"].BorderSizePixel = 0.5
+G2L["9"].BorderSizePixel = 0
 G2L["9"].ClipsDescendants = false
 G2L["9"].Draggable = false
-G2L["9"].Position = UDim2.new(0, 0, 0, 0)
+G2L["9"].Position = UDim2.new(0, 0, 0.5, 0)
 G2L["9"].Rotation = 0
 G2L["9"].Selectable = false
 G2L["9"].SelectionOrder = 0
@@ -191,10 +190,10 @@ G2L["10"].MaxTextSize = 28
 G2L["10"].Parent = G2L["9"]
 
 G2L["11"].Name = [[Slot4]]
-G2L["11"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["11"].FontFace = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 G2L["11"].Text = [[1 ->]]
 G2L["11"].RichText = true
-G2L["11"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["11"].TextColor3 = Color3.fromRGB(62, 63, 66) -- Cor do nome da arma
 G2L["11"].TextScaled = true
 G2L["11"].TextSize = 14
 G2L["11"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
@@ -210,7 +209,7 @@ G2L["11"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 G2L["11"].BorderSizePixel = 0
 G2L["11"].ClipsDescendants = false
 G2L["11"].Draggable = false
-G2L["11"].Position = UDim2.new(0, 0, 0, 0)
+G2L["11"].Position = UDim2.new(0, 0, 0.75, 0)
 G2L["11"].Rotation = 0
 G2L["11"].Selectable = false
 G2L["11"].SelectionOrder = 0
@@ -223,9 +222,16 @@ G2L["12"].Name = [[UITextSizeConstraint]]
 G2L["12"].MaxTextSize = 28
 G2L["12"].Parent = G2L["11"]
 
-G2L["15"].Name = [[UIAspectRatioConstraint]]
-G2L["15"].AspectRatio = 1.777344
-G2L["15"].Parent = G2L["0"]
+G2L["15"].Name = [[AspectRatioConstraint]]
+G2L["15"].AspectRatio = 1.7777777777778
+G2L["15"].Parent = G2L["1"]
 
---Scripte
- return G2L["0"]
+-- Color for the number of bullets (if needed)
+-- Update the number of bullets if they are shown
+-- G2L["5"].TextColor3 = Color3.fromRGB(0, 34, 255) -- Cor do número de munições para Slot1
+-- G2L["7"].TextColor3 = Color3.fromRGB(0, 34, 255) -- Cor do número de munições para Slot2
+-- G2L["9"].TextColor3 = Color3.fromRGB(0, 34, 255) -- Cor do número de munições para Slot3
+-- G2L["11"].TextColor3 = Color3.fromRGB(0, 34, 255) -- Cor do número de munições para Slot4
+
+-- Finalizing
+G2L["0"].Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
