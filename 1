@@ -31,7 +31,7 @@ do
                             local _vector2 = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
                             local _vector2_1 = Vector2.new(part_position.X, part_position.Y)
                             local magnitude = (_vector2 - _vector2_1).Magnitude
-                            if magnitude < weight and magnitude < 500 then
+                            if magnitude < weight and magnitude < 450 then
                                 weight = magnitude
                                 chosen = child
                             end
