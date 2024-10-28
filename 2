@@ -1,0 +1,72 @@
+-- Instances:
+local G2L = {}
+
+G2L["0"] = Instance.new("ScreenGui")
+G2L["1"] = Instance.new("Frame")
+G2L["2"] = Instance.new("TextLabel")
+G2L["3"] = Instance.new("Frame")
+G2L["4"] = Instance.new("UIListLayout")
+G2L["5"] = Instance.new("TextLabel")
+G2L["6"] = Instance.new("TextLabel")
+G2L["7"] = Instance.new("TextLabel")
+G2L["8"] = Instance.new("TextLabel")
+G2L["9"] = Instance.new("TextLabel")
+
+-- Properties:
+G2L["0"].Name = "InventoryViewerUI"
+G2L["0"].Enabled = true
+G2L["0"].ResetOnSpawn = false
+G2L["0"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+G2L["1"].Name = "Main"
+G2L["1"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["1"].BackgroundTransparency = 0.6
+G2L["1"].Position = UDim2.new(0.35, 0, 0.1, 0)
+G2L["1"].Size = UDim2.new(0.3, 0, 0.4, 0)
+G2L["1"].Parent = G2L["0"]
+
+-- Player Name Label
+G2L["2"].Name = "PlayerName"
+G2L["2"].Font = Enum.Font.SourceSans
+G2L["2"].Text = "stan_isgoofyah's Inventory"
+G2L["2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+G2L["2"].TextSize = 18
+G2L["2"].TextXAlignment = Enum.TextXAlignment.Left
+G2L["2"].BackgroundTransparency = 1
+G2L["2"].Size = UDim2.new(1, 0, 0.1, 0)
+G2L["2"].Parent = G2L["1"]
+
+-- Container for Inventory Slots
+G2L["3"].Name = "Lists"
+G2L["3"].BackgroundTransparency = 1
+G2L["3"].Position = UDim2.new(0, 0, 0.1, 0)
+G2L["3"].Size = UDim2.new(1, 0, 0.9, 0)
+G2L["3"].Parent = G2L["1"]
+
+G2L["4"].Parent = G2L["3"]
+G2L["4"].SortOrder = Enum.SortOrder.LayoutOrder
+
+-- Inventory Slots (1-5)
+local slotNames = {
+    "Shotgun [6/1] [--/--]",
+    "HuntingRifle [2/0] [RifleSuppressor/--]",
+    "RevolverNew [6/2] [PistolSuppressor/--]",
+    "Flashlight [0/0] [--/--]",
+    "Empty [--/--] [--/--]"
+}
+
+for i, name in ipairs(slotNames) do
+    local slot = Instance.new("TextLabel")
+    slot.Name = "Slot" .. i
+    slot.Font = Enum.Font.SourceSans
+    slot.Text = i .. " -> " .. name
+    slot.TextColor3 = Color3.fromRGB(255, 255, 255)
+    slot.TextSize = 14
+    slot.TextXAlignment = Enum.TextXAlignment.Left
+    slot.BackgroundTransparency = 1
+    slot.Size = UDim2.new(1, 0, 0.18, 0) -- Adjust height for spacing
+    slot.Parent = G2L["3"]
+end
+
+-- Return main GUI object
+return G2L["0"]
