@@ -19,54 +19,55 @@ G2L["0"].ResetOnSpawn = false
 G2L["0"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 G2L["1"].Name = "Main"
-G2L["1"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-G2L["1"].BackgroundTransparency = 0.6
-G2L["1"].Position = UDim2.new(0.35, 0, 0.1, 0)
-G2L["1"].Size = UDim2.new(0.3, 0, 0.4, 0)
+G2L["1"].BackgroundColor3 = Color3.fromRGB(15, 15, 15) -- Cor de fundo mais escura para combinar com a imagem
+G2L["1"].BackgroundTransparency = 0.4
+G2L["1"].Position = UDim2.new(0.05, 0, 0.05, 0) -- Posição ajustada para o canto superior esquerdo
+G2L["1"].Size = UDim2.new(0, 250, 0, 200) -- Ajuste de tamanho
 G2L["1"].Parent = G2L["0"]
 
--- Player Name Label
+-- Nome do jogador no topo
 G2L["2"].Name = "PlayerName"
-G2L["2"].Font = Enum.Font.SourceSans
+G2L["2"].Font = Enum.Font.Code -- Fonte tipo "Code" para parecer mais com console
 G2L["2"].Text = "stan_isgoofyah's Inventory"
 G2L["2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-G2L["2"].TextSize = 18
+G2L["2"].TextSize = 14
 G2L["2"].TextXAlignment = Enum.TextXAlignment.Left
 G2L["2"].BackgroundTransparency = 1
-G2L["2"].Size = UDim2.new(1, 0, 0.1, 0)
+G2L["2"].Size = UDim2.new(1, 0, 0.15, 0)
+G2L["2"].Position = UDim2.new(0, 5, 0, 5)
 G2L["2"].Parent = G2L["1"]
 
--- Container for Inventory Slots
-G2L["3"].Name = "Lists"
+-- Container para os slots de inventário
+G2L["3"].Name = "SlotsContainer"
 G2L["3"].BackgroundTransparency = 1
-G2L["3"].Position = UDim2.new(0, 0, 0.1, 0)
-G2L["3"].Size = UDim2.new(1, 0, 0.9, 0)
+G2L["3"].Position = UDim2.new(0, 5, 0, 30)
+G2L["3"].Size = UDim2.new(1, -10, 1, -35)
 G2L["3"].Parent = G2L["1"]
 
 G2L["4"].Parent = G2L["3"]
 G2L["4"].SortOrder = Enum.SortOrder.LayoutOrder
 
--- Inventory Slots (1-5)
+-- Slots de inventário formatados (1-5)
 local slotNames = {
-    "Shotgun [6/1] [--/--]",
-    "HuntingRifle [2/0] [RifleSuppressor/--]",
-    "RevolverNew [6/2] [PistolSuppressor/--]",
-    "Flashlight [0/0] [--/--]",
-    "Empty [--/--] [--/--]"
+    "1 -> Shotgun [6/1] [--/--]",
+    "2 -> HuntingRifle [2/0] [RifleSuppressor/--]",
+    "3 -> RevolverNew [6/2] [PistolSuppressor/--]",
+    "4 -> Flashlight [0/0] [--/--]",
+    "5 -> Empty [--/--] [--/--]"
 }
 
 for i, name in ipairs(slotNames) do
     local slot = Instance.new("TextLabel")
     slot.Name = "Slot" .. i
-    slot.Font = Enum.Font.SourceSans
-    slot.Text = i .. " -> " .. name
-    slot.TextColor3 = Color3.fromRGB(255, 255, 255)
-    slot.TextSize = 14
+    slot.Font = Enum.Font.Code
+    slot.Text = name
+    slot.TextColor3 = Color3.fromRGB(200, 200, 255) -- Texto em roxo claro para corresponder à imagem
+    slot.TextSize = 13
     slot.TextXAlignment = Enum.TextXAlignment.Left
     slot.BackgroundTransparency = 1
-    slot.Size = UDim2.new(1, 0, 0.18, 0) -- Adjust height for spacing
+    slot.Size = UDim2.new(1, 0, 0, 20) -- Altura ajustada para espaçamento consistente
     slot.Parent = G2L["3"]
 end
 
--- Return main GUI object
+-- Retorna o objeto principal da GUI
 return G2L["0"]
